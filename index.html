@@ -13,6 +13,22 @@
 	<meta name="viewport" content="width=device-width">
 	<meta name="generator" content="Framer 747ab96">
 	<title>RAIOQUANTUM</title>
+	<script>
+		(() => {
+			const desiredTitle = "RAIOQUANTUM";
+			const enforceTitle = () => {
+				if (document.title !== desiredTitle) {
+					document.title = desiredTitle;
+				}
+			};
+			enforceTitle();
+			const titleEl = document.querySelector("title");
+			if (titleEl) {
+				const observer = new MutationObserver(enforceTitle);
+				observer.observe(titleEl, { childList: true, characterData: true, subtree: true });
+			}
+		})();
+	</script>
     <meta name="description" content="Agentic – a responsive, minimalist design with dynamic animation effects, ideal for agencies, portfolios, or personal use. Showcase your work seamlessly with a sleek aesthetic that adapts flawlessly across devices.">
     <meta name="framer-search-index" content="https://framerusercontent.com/sites/2agFUNgz7vo8SJ3eCjyx9u/searchIndex-Y3F9MrjioSUV.json">
     <meta name="framer-search-index-fallback" content="https://framerusercontent.com/sites/2agFUNgz7vo8SJ3eCjyx9u/searchIndex-zxAJ0m0JQ75S.json">
